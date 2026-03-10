@@ -636,6 +636,20 @@ ul { list-style: none; }
 
 .form__group input::placeholder { color: var(--color-muted); }
 
+.form__error {
+  display: block;
+  font-size: var(--text-xs);
+  color: #f87171;
+  margin-top: 0.25rem;
+  min-height: 1em;
+}
+
+.form__group input.input--error,
+.form__group select.input--error {
+  border-color: #f87171;
+  outline-color: #f87171;
+}
+
 .form__note {
   font-size: var(--text-xs);
   color: var(--color-muted);

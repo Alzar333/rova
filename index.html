@@ -255,10 +255,12 @@
             <div class="form__group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Your name" required />
+              <span class="form__error" id="nameError" aria-live="polite"></span>
             </div>
             <div class="form__group">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <span class="form__error" id="emailError" aria-live="polite"></span>
             </div>
             <div class="form__group">
               <label for="role">I am a…</label>
@@ -330,6 +332,55 @@
         hamburger.classList.remove('is-open');
         mobileMenu.classList.remove('is-open');
       });
+    });
+
+    // ── Contact form validation ──────────────────────────────────────────
+    const contactForm = document.querySelector('.contact__form');
+    const nameInput   = document.getElementById('name');
+    const emailInput  = document.getElementById('email');
+    const nameError   = document.getElementById('nameError');
+    const emailError  = document.getElementById('emailError');
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    function validateName() {
+      if (!nameInput.value.trim()) {
+        nameError.textContent = 'Name is required.';
+        nameInput.classList.add('input--error');
+        return false;
+      }
+      nameError.textContent = '';
+      nameInput.classList.remove('input--error');
+      return true;
+    }
+
+    function validateEmail() {
+      const val = emailInput.value.trim();
+      if (!val) {
+        emailError.textContent = 'Email is required.';
+        emailInput.classList.add('input--error');
+        return false;
+      }
+      if (!emailRegex.test(val)) {
+        emailError.textContent = 'Please enter a valid email address.';
+        emailInput.classList.add('input--error');
+        return false;
+      }
+      emailError.textContent = '';
+      emailInput.classList.remove('input--error');
+      return true;
+    }
+
+    nameInput.addEventListener('blur', validateName);
+    emailInput.addEventListener('blur', validateEmail);
+
+    contactForm.addEventListener('submit', e => {
+      const nameOk  = validateName();
+      const emailOk = validateEmail();
+      if (!nameOk || !emailOk) {
+        e.preventDefault();
+        (nameOk ? emailInput : nameInput).focus();
+      }
     });
 
     // ── Smooth scroll for anchor links ───────────────────────────────────
