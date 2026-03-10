@@ -5,10 +5,11 @@
 
 /* ── Custom properties ─────────────────────────────────────────────────── */
 :root {
-  /* Colours */
-  --color-teal:      #1e9e8c;
-  --color-teal-dark: #0d6e61;
+  /* Colours — Rova brand palette */
+  --color-teal:      #0a9e8f;
+  --color-teal-dark: #077a6f;
   --color-teal-dim:  #22d3bb;
+  --color-lime:      #b8e04a;
   --color-navy:      #061420;
   --color-navy-mid:  #0a2a3c;
   --color-navy-light:#0a4a5c;
@@ -199,14 +200,12 @@ ul { list-style: none; }
 }
 
 .nav__logo {
-  font-size: var(--text-2xl);
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
   margin-right: auto;
   flex-shrink: 0;
+  line-height: 1;
 }
-.nav__logo span { color: var(--color-teal-dim); }
 
 .nav__links {
   display: none;
@@ -689,10 +688,9 @@ ul { list-style: none; }
 }
 
 .footer__logo {
-  font-size: var(--text-xl);
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+  line-height: 1;
 }
 
 .footer__tagline {

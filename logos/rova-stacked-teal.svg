@@ -1,0 +1,12 @@
+<svg width="88" height="96" viewBox="0 0 88 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&amp;display=swap');</style>
+  <rect width="88" height="96" fill="#0a9e8f"/>
+  <path d="M 8 52 C 8 24 50 4 72 28" stroke="#0d1117" stroke-width="3.6" stroke-linecap="round" fill="none"/>
+  <path d="M 17 52 C 17 29 52 10 70 30" stroke="#b8e04a" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <circle cx="8" cy="52" r="5.5" fill="#0d1117"/>
+  <circle cx="48" cy="8" r="5.5" fill="none" stroke="#0d1117" stroke-width="2.8"/>
+  <circle cx="48" cy="8" r="2" fill="#0d1117"/>
+  <circle cx="72" cy="28" r="8" fill="none" stroke="#0d1117" stroke-width="2.8"/>
+  <circle cx="72" cy="28" r="3.4" fill="#b8e04a"/>
+  <text x="0" y="90" font-family="Syne, sans-serif" font-weight="800" font-size="40" letter-spacing="-1.8" fill="#0d1117">rova</text>
+</svg>
