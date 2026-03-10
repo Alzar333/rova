@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rova — Urban Mobility Today. Autonomous Delivery Tomorrow.</title>
+  <meta name="description" content="Rova is a Canberra-based shared e-scooter company building the future of urban mobility and autonomous last-mile delivery." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo">Rova</a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#vision">Vision</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--sm nav__cta">Stay in the loop</a>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <a href="#about" class="nav__mobile-link">About</a>
+      <a href="#vision" class="nav__mobile-link">Vision</a>
+      <a href="#contact" class="nav__mobile-link">Contact</a>
+      <a href="#contact" class="btn btn--outline nav__mobile-cta">Stay in the loop</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════ HERO ══════════════════════════════ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+        <div class="hero__scooter-art" aria-hidden="true">
+          <!-- SVG illustration: stylised scooter + city lines -->
+          <svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Ground line -->
+            <line x1="60" y1="340" x2="540" y2="340" stroke="#1e9e8c" stroke-width="2" stroke-dasharray="8 6" opacity="0.4"/>
+            <!-- Rear wheel -->
+            <circle cx="160" cy="340" r="44" stroke="#1e9e8c" stroke-width="3" fill="none" opacity="0.7"/>
+            <circle cx="160" cy="340" r="18" stroke="#1e9e8c" stroke-width="2" fill="none" opacity="0.4"/>
+            <!-- Front wheel -->
+            <circle cx="380" cy="340" r="44" stroke="#1e9e8c" stroke-width="3" fill="none" opacity="0.7"/>
+            <circle cx="380" cy="340" r="18" stroke="#1e9e8c" stroke-width="2" fill="none" opacity="0.4"/>
+            <!-- Deck -->
+            <rect x="148" y="326" width="244" height="16" rx="8" fill="#0a4a5c" stroke="#1e9e8c" stroke-width="1.5" opacity="0.8"/>
+            <!-- Stem -->
+            <line x1="370" y1="326" x2="340" y2="220" stroke="#1e9e8c" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+            <!-- Handlebar -->
+            <line x1="308" y1="222" x2="372" y2="222" stroke="#1e9e8c" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+            <!-- Seat post -->
+            <line x1="240" y1="326" x2="240" y2="250" stroke="#1e9e8c" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+            <!-- City buildings background -->
+            <rect x="420" y="200" width="40" height="140" rx="2" fill="#0a2a3c" opacity="0.5"/>
+            <rect x="465" y="240" width="30" height="100" rx="2" fill="#0a2a3c" opacity="0.4"/>
+            <rect x="498" y="220" width="36" height="120" rx="2" fill="#0a2a3c" opacity="0.45"/>
+            <rect x="80" y="230" width="34" height="110" rx="2" fill="#0a2a3c" opacity="0.4"/>
+            <rect x="116" y="210" width="28" height="130" rx="2" fill="#0a2a3c" opacity="0.35"/>
+            <!-- GPS dot + ping rings -->
+            <circle cx="270" cy="180" r="6" fill="#1e9e8c"/>
+            <circle cx="270" cy="180" r="16" stroke="#1e9e8c" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <circle cx="270" cy="180" r="28" stroke="#1e9e8c" stroke-width="1" fill="none" opacity="0.25"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero__content container">
+        <div class="hero__badge">🇦🇺 Canberra, ACT — Coming Soon</div>
+        <h1 class="hero__headline">Urban mobility today.<br/>Autonomous delivery tomorrow.</h1>
+        <p class="hero__sub">Rova is building the future of shared transport and last-mile delivery in Australian cities.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Stay in the loop</a>
+          <a href="#vision" class="btn btn--ghost">Learn more ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════════════════════ ABOUT ══════════════════════════════ -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">About Rova</span>
+          <h2 class="section__title">A scooter company built for cities that have seen the rest.</h2>
+          <p class="section__body">
+            Rova is a Canberra-based shared e-scooter company preparing to launch in the ACT and NSW.
+            We're building a compliance-first operation — using AI-assisted parking validation, real-time
+            fleet monitoring, and best-in-class hardware — to deliver a service that cities actually want to keep.
+          </p>
+        </div>
+
+        <div class="tiles">
+          <div class="tile">
+            <div class="tile__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
+                <path d="M15 24l6 6 12-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="tile__heading">Compliance-first</h3>
+            <p class="tile__body">Built around AI-assisted parking, real-time fleet monitoring, and the Segway Pilot Lite safety system.</p>
+          </div>
+
+          <div class="tile">
+            <div class="tile__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8C15.16 8 8 15.16 8 24s7.16 16 16 16 16-7.16 16-16S32.84 8 24 8z" stroke="currentColor" stroke-width="2"/>
+                <path d="M24 16v8l5 3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 34c2-4 6-7 12-7s10 3 12 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+              </svg>
+            </div>
+            <h3 class="tile__heading">Sustainable by design</h3>
+            <p class="tile__body">Zero-emission fleet. Charging from renewables. Designed to reduce car trips, not just replace walking.</p>
+          </div>
+
+          <div class="tile">
+            <div class="tile__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 10c-7.73 0-14 6.27-14 14 0 5.52 3.17 10.3 7.8 12.68L24 38l6.2-1.32C34.83 34.3 38 29.52 38 24c0-7.73-6.27-14-14-14z" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 23l3 3 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="tile__heading">For the greater good</h3>
+            <p class="tile__body">We exist to make cities better — cleaner, less congested, and more connected.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════ VISION ══════════════════════════════ -->
+    <section class="vision section" id="vision">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">The Vision</span>
+          <h2 class="section__title">Scooters are the beginning, not the destination.</h2>
+          <p class="section__body">
+            Every great platform starts with a single use case. Ours starts with shared mobility — and builds toward something far more ambitious.
+          </p>
+        </div>
+
+        <div class="phases">
+          <!-- Phase 1 -->
+          <div class="phase phase--today">
+            <div class="phase__tag">Phase 1 — Today</div>
+            <div class="phase__visual" aria-hidden="true">
+              <svg viewBox="0 0 260 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Scooter -->
+                <circle cx="80" cy="140" r="28" stroke="#1e9e8c" stroke-width="2.5" fill="none"/>
+                <circle cx="80" cy="140" r="10" stroke="#1e9e8c" stroke-width="1.5" fill="none" opacity="0.5"/>
+                <circle cx="190" cy="140" r="28" stroke="#1e9e8c" stroke-width="2.5" fill="none"/>
+                <circle cx="190" cy="140" r="10" stroke="#1e9e8c" stroke-width="1.5" fill="none" opacity="0.5"/>
+                <rect x="72" y="128" width="130" height="14" rx="7" fill="#0a4a5c" stroke="#1e9e8c" stroke-width="1.5"/>
+                <line x1="183" y1="128" x2="162" y2="64" stroke="#1e9e8c" stroke-width="3" stroke-linecap="round"/>
+                <line x1="146" y1="66" x2="178" y2="66" stroke="#1e9e8c" stroke-width="3" stroke-linecap="round"/>
+                <!-- Rider silhouette -->
+                <circle cx="155" cy="50" r="12" fill="#0d6e61" opacity="0.8"/>
+                <path d="M143 90 C143 72 167 72 167 90" fill="#0d6e61" opacity="0.8"/>
+                <!-- GPS ping -->
+                <circle cx="135" cy="30" r="4" fill="#22d3bb"/>
+                <circle cx="135" cy="30" r="10" stroke="#22d3bb" stroke-width="1" fill="none" opacity="0.5"/>
+                <circle cx="135" cy="30" r="18" stroke="#22d3bb" stroke-width="0.8" fill="none" opacity="0.25"/>
+              </svg>
+            </div>
+            <h3 class="phase__heading">Shared E-Scooters</h3>
+            <p class="phase__body">
+              Rova launches as a shared e-scooter operator — giving city residents a fast, affordable, and sustainable way to get around.
+              Every scooter in our fleet is GPS-tracked, compliance-monitored, and designed to meet the highest regulatory standards.
+            </p>
+            <ul class="phase__list">
+              <li>Segway Apex D110L hardware</li>
+              <li>AI-assisted parking validation</li>
+              <li>Atom Mobility fleet platform</li>
+              <li>Real-time compliance monitoring</li>
+            </ul>
+          </div>
+
+          <!-- Divider arrow -->
+          <div class="phases__arrow" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 24h32M28 14l12 10-12 10" stroke="#1e9e8c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="phase phase--tomorrow">
+            <div class="phase__tag phase__tag--future">Phase 2 — Tomorrow</div>
+            <div class="phase__visual" aria-hidden="true">
+              <svg viewBox="0 0 260 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Autonomous vehicle body -->
+                <rect x="60" y="100" width="150" height="50" rx="12" fill="#0a2a3c" stroke="#1e9e8c" stroke-width="2"/>
+                <rect x="85" y="80" width="100" height="30" rx="8" fill="#0a3a4c" stroke="#1e9e8c" stroke-width="1.5"/>
+                <!-- Wheels -->
+                <circle cx="95" cy="152" r="18" stroke="#1e9e8c" stroke-width="2" fill="#0a1a2c"/>
+                <circle cx="175" cy="152" r="18" stroke="#1e9e8c" stroke-width="2" fill="#0a1a2c"/>
+                <!-- Delivery box -->
+                <rect x="108" y="86" width="54" height="26" rx="4" fill="#0d6e61" opacity="0.7" stroke="#22d3bb" stroke-width="1"/>
+                <line x1="135" y1="86" x2="135" y2="112" stroke="#22d3bb" stroke-width="1" opacity="0.5"/>
+                <line x1="108" y1="99" x2="162" y2="99" stroke="#22d3bb" stroke-width="1" opacity="0.5"/>
+                <!-- Sensors / lidar sweeps -->
+                <path d="M70 104 L50 80 L50 128 Z" fill="#1e9e8c" opacity="0.1"/>
+                <path d="M70 104 L46 76 L54 76" stroke="#1e9e8c" stroke-width="1" opacity="0.4"/>
+                <path d="M70 104 L46 132 L54 132" stroke="#1e9e8c" stroke-width="1" opacity="0.4"/>
+                <!-- Route dots -->
+                <circle cx="50" cy="40" r="4" fill="#22d3bb"/>
+                <line x1="50" y1="44" x2="50" y2="68" stroke="#22d3bb" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6"/>
+                <circle cx="220" cy="40" r="4" fill="#22d3bb" opacity="0.6"/>
+                <line x1="220" y1="44" x2="220" y2="90" stroke="#22d3bb" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.4"/>
+                <path d="M54 40 Q135 20 216 40" stroke="#22d3bb" stroke-width="1" stroke-dasharray="5 4" fill="none" opacity="0.35"/>
+              </svg>
+            </div>
+            <h3 class="phase__heading">Autonomous Last-Mile Delivery</h3>
+            <p class="phase__body">
+              Our long-term vision goes beyond ride-sharing. We are developing a platform where the same vehicles that carry riders today
+              will autonomously run errands, deliver groceries, and move goods across the city tomorrow — reducing delivery vans,
+              cutting emissions, and making urban logistics smarter.
+            </p>
+            <ul class="phase__list">
+              <li>Autonomous navigation platform</li>
+              <li>Last-mile goods delivery</li>
+              <li>Reduced urban freight emissions</li>
+              <li>Smarter city logistics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CONTACT ══════════════════════════════ -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__copy">
+            <span class="section__label">Stay in the Loop</span>
+            <h2 class="section__title">Be part of what's coming.</h2>
+            <p class="section__body">
+              Rova is preparing to launch. Whether you're an investor, a city council, or just someone
+              who wants to ride — we'd love to hear from you.
+            </p>
+            <a href="mailto:hello@rova.net.au" class="contact__email">hello@rova.net.au</a>
+          </div>
+
+          <form class="contact__form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form__group">
+              <label for="role">I am a…</label>
+              <select id="role" name="role" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="investor">Investor</option>
+                <option value="regulator">Regulator / Government</option>
+                <option value="rider">Future Rider</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Register Interest</button>
+            <p class="form__note">No spam. We'll only reach out when it matters.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════ FOOTER ══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Rova</span>
+        <span class="footer__tagline">For the greater good.</span>
+      </div>
+
+      <div class="footer__links">
+        <a href="#about">About</a>
+        <a href="#vision">Vision</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+
+      <div class="footer__social" aria-label="Social media (coming soon)">
+        <!-- Reserve space — accounts not yet live -->
+        <span class="footer__social-placeholder">Social — coming soon</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Rova. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ── Sticky nav shadow on scroll ──────────────────────────────────────
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // ── Hamburger toggle ─────────────────────────────────────────────────
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!open));
+      mobileMenu.setAttribute('aria-hidden', String(open));
+      hamburger.classList.toggle('is-open', !open);
+      mobileMenu.classList.toggle('is-open', !open);
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        hamburger.classList.remove('is-open');
+        mobileMenu.classList.remove('is-open');
+      });
+    });
+
+    // ── Smooth scroll for anchor links ───────────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
